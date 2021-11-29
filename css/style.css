@@ -1,0 +1,430 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+html {
+  font-size: medium;
+  font-family: "Poppins", sans-serif; }
+
+body {
+  background-color: white; }
+
+nav {
+  background-color: #f8f9fa; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+.navbar__button--SecondaryColor {
+  background-color: #ff4d4d;
+  color: #ffffff; }
+
+.navbar__button--SecondaryColor:hover {
+  background-color: #dd4a4a;
+  color: #ffffff; }
+
+.searchBox__button--SecondaryColor {
+  background-color: #ff4d4d;
+  color: #ffffff; }
+
+.searchBox__button--SecondaryColor:hover {
+  background-color: #dd4a4a;
+  color: #ffffff; }
+
+.rentCarBox__button--SecondaryColor {
+  background-color: #ff4d4d;
+  color: #ffffff; }
+
+.rentCarBox__button--SecondaryColor:hover {
+  background-color: #dd4a4a;
+  color: #ffffff; }
+
+.signIn__form__button--SecondaryColor {
+  background-color: #ff4d4d;
+  color: #ffffff; }
+
+.signIn__form__button--SecondaryColor:hover {
+  background-color: #dd4a4a;
+  color: #ffffff; }
+
+.signUp__form__button--SecondaryColor {
+  background-color: #ff4d4d;
+  color: #ffffff; }
+
+.signUp__form__button--SecondaryColor:hover {
+  background-color: #dd4a4a;
+  color: #ffffff; }
+
+.searchBox__button--SecondaryColor {
+  border: none;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); }
+
+.rentCarBox__button--SecondaryColor {
+  border: none;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); }
+
+.signIn__form__button--SecondaryColor {
+  border: none;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); }
+
+.signUp__form__button--SecondaryColor {
+  border: none;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); }
+
+.formInput, .signIn__form__input, .signUp__form__input {
+  display: flex;
+  flex-direction: column;
+  margin: 0.7rem 1rem; }
+  .formInput label, .signIn__form__input label, .signUp__form__input label {
+    font-size: me; }
+  .formInput input, .signIn__form__input input, .signUp__form__input input {
+    height: 3em;
+    padding: 0.375rem 0.75rem;
+    margin-top: 0.5rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccc;
+    border-radius: 0.5em; }
+
+.titleSection, .requirements__title, .paymentTypes__title, .contact__title {
+  background-color: #f0f0f0;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-right: 4rem;
+  padding-left: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #00c6dd;
+  letter-spacing: 5px; }
+
+.fontSizeLarge, .footer__menu--fontSizeLarge, .searchBox__button--fontSizeLarge button, .rentCarBox__button--fontSizeLarge {
+  font-size: large; }
+
+#registerOwner {
+  background-image: url("/assets/img/work_with_us_background_001.png"); }
+
+.navbar__ButtonOutLine {
+  border-color: #ff4d4d; }
+  .navbar__ButtonOutLine:hover {
+    background-color: #ff4d4d; }
+    .navbar__ButtonOutLine:hover a {
+      color: #ffffff; }
+
+.navbar__img {
+  margin-left: 2rem; }
+
+.footer {
+  background-image: linear-gradient(#6c757d 40%, #555b61 90%, #555b61 100%);
+  color: #ffffff;
+  position: relative;
+  padding-top: 3rem;
+  position: relative; }
+  .footer__img {
+    position: absolute;
+    top: -36px;
+    left: 50%;
+    transform: none;
+    transition: transform 0.5s;
+    margin-left: -32.5px;
+    overflow: hidden; }
+  .footer__img:hover {
+    transform: scale(1.09); }
+  .footer__menu--color a {
+    color: #ffffff; }
+
+.searchBox {
+  position: relative; }
+  .searchBox img {
+    width: 100%; }
+  .searchBox__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    border-radius: 0.5rem;
+    width: 80%; }
+    .searchBox__container--transparent {
+      background-color: rgba(255, 255, 255, 0.9); }
+  .searchBox__button button {
+    min-width: 30%;
+    border-radius: 2rem; }
+
+.rentCarBox {
+  max-width: 70rem;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  margin-right: auto;
+  margin-left: auto; }
+  .rentCarBox__button {
+    border-radius: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    min-width: 15rem; }
+  .rentCarBox__title {
+    color: #ff4d4d;
+    letter-spacing: 3px;
+    font-size: xxx-large;
+    text-transform: uppercase; }
+  .rentCarBox__subTitle {
+    color: #3c3c3c;
+    word-spacing: 15px;
+    letter-spacing: 2px;
+    margin-top: 5%;
+    font-size: x-large; }
+
+.benefits__container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  font-size: large;
+  margin: auto;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  max-width: 90rem; }
+  .benefits__container__item {
+    max-width: 20rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    padding: 2rem;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.08);
+    text-align: center; }
+    .benefits__container__item h3 {
+      padding-bottom: 2rem;
+      color: #555b61; }
+    .benefits__container__item p {
+      font-size: medium; }
+
+.requirements {
+  margin-bottom: 7rem; }
+  .requirements__subTitle {
+    color: #555b61;
+    max-width: 40rem;
+    margin: auto;
+    text-align: left;
+    padding-top: 6rem;
+    padding-bottom: 2rem; }
+  .requirements__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 60rem;
+    margin: auto; }
+  .requirements__list {
+    font-size: large;
+    width: auto; }
+    .requirements__list ul {
+      text-align: left; }
+    .requirements__list li {
+      margin-top: 2rem;
+      margin-bottom: 2rem; }
+      .requirements__list li i {
+        color: green;
+        margin-right: 1rem; }
+    .requirements__list__item {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: start;
+      align-items: baseline;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      border-bottom-style: solid;
+      border-width: 1.5px;
+      border-color: #f0f0f0; }
+    .requirements__list__list {
+      width: auto; }
+  .requirements__img {
+    width: auto;
+    padding-right: 2rem;
+    padding-left: 2rem; }
+
+.signIn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .signIn__img {
+    width: 50%;
+    overflow: hidden; }
+    .signIn__img img {
+      height: 100%; }
+  .signIn__form {
+    width: 50%;
+    background-color: #ffff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center; }
+    .signIn__form form {
+      min-width: 21rem;
+      width: 50%;
+      border-style: solid;
+      border-width: 2px;
+      border-color: #f0f0f0;
+      border-radius: 0.7rem;
+      padding-top: 3rem;
+      padding-bottom: 1rem;
+      margin: 4rem; }
+    .signIn__form__link {
+      text-align: end;
+      padding: 0 1rem;
+      font-size: medium; }
+    .signIn__form__button {
+      padding-top: 2rem;
+      padding-bottom: 3rem;
+      padding-right: 1rem;
+      padding-left: 1rem; }
+      .signIn__form__button input {
+        width: 100%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-radius: 2rem;
+        font-size: large; }
+
+.signUp {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .signUp__img {
+    width: 50%;
+    overflow: hidden; }
+    .signUp__img img {
+      height: 100%; }
+  .signUp__form {
+    width: 50%;
+    background-color: #ffff; }
+    .signUp__form form {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      border-style: solid;
+      border-width: 2px;
+      border-color: #f0f0f0;
+      border-radius: 0.7rem;
+      padding-top: 3rem;
+      padding-bottom: 1rem;
+      margin: 4rem; }
+    .signUp__form__input {
+      width: 40%; }
+    .signUp__form__link {
+      text-align: end;
+      padding: 0 1rem;
+      font-size: medium;
+      width: 100%; }
+    .signUp__form__checkBox {
+      text-align: center;
+      padding: 1rem 1rem;
+      font-size: medium;
+      width: 100%; }
+    .signUp__form__button {
+      padding-top: 2rem;
+      padding-bottom: 3rem;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      width: 90%; }
+      .signUp__form__button input {
+        width: 100%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-radius: 2rem;
+        font-size: large; }
+
+.paymentTypes__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 2rem; }
+  .paymentTypes__container__item {
+    margin: 2rem; }
+    .paymentTypes__container__item p {
+      display: inline-block;
+      background-color: #6c757d;
+      color: white;
+      width: 17rem;
+      text-align: center;
+      font-size: x-large;
+      font-style: bold;
+      padding: 3rem; }
+
+.contact__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center; }
+  .contact__container__item {
+    width: 50%;
+    padding: 4rem 2rem;
+    max-width: 30rem; }
+    .contact__container__item--textCenter {
+      text-align: center; }
+
+/* ---------------- `md` Mobile ----------------*/
+@media (max-width: 767.98px) {
+  .searchBox__button button {
+    justify-self: center;
+    min-width: 70%; }
+  .searchBox__container {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    border-radius: 0.5rem;
+    width: 80%; }
+  .signUp__img {
+    width: 100%; }
+  .signUp__form {
+    width: 100%; }
+    .signUp__form form {
+      flex-direction: column;
+      margin: 3rem 1rem; }
+    .signUp__form__input {
+      width: 90%; } }
+
+/* ---------------- `lg` Tablets ----------------*/
+@media (max-width: 991.98px) {
+  header {
+    border-bottom: solid;
+    border-width: 0.15rem;
+    border-color: transparent;
+    background-image: linear-gradient(to right, #17e6fd 0%, #ff4d4d 40%); }
+  .rentCarBox__button {
+    margin-top: 4rem; }
+  .requirements__title {
+    padding-right: 1rem;
+    padding-left: 1rem; }
+  .requirements__subTitle {
+    text-align: center; }
+  .requirements__container {
+    flex-direction: column; }
+  .signIn__img {
+    display: none; }
+  .signUp {
+    flex-direction: column; }
+    .signUp__img {
+      width: 100%; }
+      .signUp__img img {
+        width: 100%; }
+    .signUp__form {
+      width: 100%; }
+  .contact__title {
+    margin-bottom: 2rem; }
+  .contact__container {
+    flex-direction: column;
+    align-items: center; }
+    .contact__container__item {
+      width: 90%;
+      padding: 2rem 1rem;
+      text-align: center; } }
