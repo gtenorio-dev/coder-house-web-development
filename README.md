@@ -10,3 +10,13 @@ Good practices
 - CSS
 - SCSS
 - Bootstrap
+
+
+# Install
+
+npm i -D node-sass nodemon
+
+
+# Run SCSS
+
+npm run watch-css
