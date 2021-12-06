@@ -90,7 +90,7 @@ a {
     border-color: #ccc;
     border-radius: 0.5em; }
 
-.titleSection, .requirements__title, .paymentTypes__title, .contact__title {
+.titleSection, .requirements__title, .paymentTypes__title, .brands__title, .contact__title {
   background-color: #f0f0f0;
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -341,23 +341,57 @@ a {
         border-radius: 2rem;
         font-size: large; }
 
-.paymentTypes__container {
+.paymentTypes {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding: 2rem; }
-  .paymentTypes__container__item {
-    margin: 2rem; }
-    .paymentTypes__container__item p {
-      display: inline-block;
-      background-color: #6c757d;
-      color: white;
-      width: 17rem;
-      text-align: center;
-      font-size: x-large;
-      font-style: bold;
-      padding: 3rem; }
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0; }
+  .paymentTypes__title {
+    width: 50%; }
+  .paymentTypes__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 50%;
+    background-color: #ffff;
+    padding-top: 3rem;
+    padding-bottom: 3rem; }
+    .paymentTypes__container__item {
+      margin: 2rem; }
+      .paymentTypes__container__item p {
+        display: inline-block;
+        background-color: #6c757d;
+        color: white;
+        width: 17rem;
+        text-align: center;
+        font-size: x-large;
+        font-style: bold;
+        padding: 3rem; }
+
+.brands {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0; }
+  .brands__title {
+    width: 50%; }
+  .brands__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 50%;
+    background-color: #ffff;
+    padding-top: 3rem;
+    padding-bottom: 3rem; }
+    .brands__container__item {
+      margin: 2rem;
+      width: 11rem; }
 
 .contact__container {
   display: flex;
@@ -427,4 +461,18 @@ a {
     .contact__container__item {
       width: 90%;
       padding: 2rem 1rem;
-      text-align: center; } }
+      text-align: center; }
+  .paymentTypes__title {
+    width: 100%; }
+  .paymentTypes__container {
+    width: 100%; }
+  .brands {
+    margin-bottom: 3rem; }
+    .brands__title {
+      width: 100%;
+      padding-top: 3rem;
+      padding-bottom: 3rem; }
+    .brands__container {
+      width: 100%;
+      padding-left: 4rem;
+      padding-right: 4rem; } }

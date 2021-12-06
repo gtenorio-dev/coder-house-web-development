@@ -31,7 +31,7 @@ a {
   text-decoration: none;
 }
 
-@each $component in navbar, searchBox, rentCarBox, signIn__form, signUp__form{
+@each $component in navbar, searchBox, rentCarBox, signIn__form, signUp__form {
   .#{$component}__button--SecondaryColor {
     background-color: $secondaryColor;
     color: #ffffff;
@@ -43,7 +43,7 @@ a {
   }
 }
 
-@each $component in searchBox, rentCarBox, signIn__form, signUp__form{
+@each $component in searchBox, rentCarBox, signIn__form, signUp__form {
   .#{$component}__button--SecondaryColor {
     border: none;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -63,7 +63,7 @@ a {
   & label {
     font-size: me;
   }
-  
+
   & input {
     height: 3em;
     padding: 0.375rem 0.75rem;
@@ -111,7 +111,6 @@ a {
     margin-left: 2rem;
   }
 }
-
 
 .footer {
   background-image: linear-gradient(
@@ -236,7 +235,7 @@ a {
         padding-bottom: 2rem;
         color: $footerColorEnd;
       }
-      
+
       p {
         font-size: medium;
       }
@@ -300,10 +299,10 @@ a {
       border-width: 1.5px;
       border-color: $auxiliaryColor;
     }
-    
+
     &__list {
       width: auto;
-    }    
+    }
   }
 
   &__img {
@@ -322,12 +321,12 @@ a {
   &__img {
     width: 50%;
     overflow: hidden;
-    
+
     & img {
       height: 100%;
     }
   }
-  
+
   &__form {
     width: 50%;
     background-color: $backgroundPrimary;
@@ -336,7 +335,7 @@ a {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    
+
     & form {
       min-width: 21rem;
       width: 50%;
@@ -352,7 +351,7 @@ a {
     &__input {
       @extend .formInput;
     }
-    
+
     &__link {
       text-align: end;
       padding: 0 1rem;
@@ -364,7 +363,7 @@ a {
       padding-bottom: 3rem;
       padding-right: 1rem;
       padding-left: 1rem;
-      
+
       & input {
         width: 100%;
         padding-top: 1rem;
@@ -385,12 +384,12 @@ a {
   &__img {
     width: 50%;
     overflow: hidden;
-    
+
     & img {
       height: 100%;
     }
   }
-  
+
   &__form {
     width: 50%;
     background-color: $backgroundPrimary;
@@ -415,7 +414,7 @@ a {
       @extend .formInput;
       width: 40%;
     }
-    
+
     &__link {
       text-align: end;
       padding: 0 1rem;
@@ -449,21 +448,31 @@ a {
 }
 
 .paymentTypes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: $auxiliaryColor;
 
   &__title {
     @extend .titleSection;
+    width: 50%;
   }
-
+  
   &__container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 2rem;
-
+    width: 50%;
+    background-color: $backgroundPrimary;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    
     &__item {
       margin: 2rem;
-  
+      
       & p {
         display: inline-block;
         background-color: $footerColorBegin;
@@ -473,16 +482,42 @@ a {
         font-size: x-large;
         font-style: bold;
         padding: 3rem;
-
       }
     }
   }
+}
 
+.brands {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: $auxiliaryColor;
 
+  &__title {
+    @extend .titleSection;
+    width: 50%;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 50%;
+    background-color: $backgroundPrimary;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    &__item {
+      margin: 2rem;
+      width: 11rem;
+    }
+  }
 }
 
 .contact {
-
   &__title {
     @extend .titleSection;
   }
@@ -492,7 +527,6 @@ a {
     flex-direction: row;
     justify-content: center;
     align-content: center;
-
 
     &__item {
       width: 50%;
@@ -504,7 +538,6 @@ a {
       }
     }
   }
-
 }
 
 /* ---------------- `md` Mobile ----------------*/
@@ -526,11 +559,10 @@ a {
   }
 
   .signUp {
-  
     &__img {
       width: 100%;
     }
-    
+
     &__form {
       width: 100%;
 
@@ -542,10 +574,8 @@ a {
       &__input {
         width: 90%;
       }
-
     }
   }
-
 }
 
 /* ---------------- `lg` Tablets ----------------*/
@@ -563,13 +593,11 @@ a {
     }
   }
 
-  
   .requirements {
     &__title {
       padding-right: 1rem;
       padding-left: 1rem;
     }
-
 
     &__subTitle {
       text-align: center;
@@ -588,14 +616,14 @@ a {
 
   .signUp {
     flex-direction: column;
-  
+
     &__img {
       width: 100%;
       & img {
         width: 100%;
       }
     }
-    
+
     &__form {
       width: 100%;
     }
@@ -609,7 +637,7 @@ a {
     &__container {
       flex-direction: column;
       align-items: center;
-  
+
       &__item {
         width: 90%;
         padding: 2rem 1rem;
@@ -618,5 +646,27 @@ a {
     }
   }
 
-}
+  .paymentTypes {
+    &__title {
+      width: 100%;
+    }
+    
+    &__container {
+      width: 100%;
+    }
+  }
 
+  .brands {
+    margin-bottom: 3rem;
+    &__title {
+      width: 100%;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+    &__container {
+      width: 100%;
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+  }
+}
