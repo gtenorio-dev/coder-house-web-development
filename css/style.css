@@ -101,7 +101,7 @@ a {
   color: #00c6dd;
   letter-spacing: 5px; }
 
-.fontSizeLarge, .footer__menu--fontSizeLarge, .searchBox__button--fontSizeLarge button, .rentCarBox__button--fontSizeLarge {
+.fontSizeLarge, .footer__menu--fontSizeLarge, .searchBox__button--fontSizeLarge a, .rentCarBox__button--fontSizeLarge {
   font-size: large; }
 
 #registerOwner {
@@ -149,7 +149,7 @@ a {
     width: 80%; }
     .searchBox__container--transparent {
       background-color: rgba(255, 255, 255, 0.9); }
-  .searchBox__button button {
+  .searchBox__button a {
     min-width: 30%;
     border-radius: 2rem; }
 
@@ -407,7 +407,7 @@ a {
 
 /* ---------------- `md` Mobile ----------------*/
 @media (max-width: 767.98px) {
-  .searchBox__button button {
+  .searchBox__button a {
     justify-self: center;
     min-width: 70%; }
   .searchBox__container {
@@ -426,6 +426,21 @@ a {
       margin: 3rem 1rem; }
     .signUp__form__input {
       width: 90%; } }
+
+section#searchSection {
+  grid-area: search; }
+
+section#carsSection {
+  grid-area: cars; }
+
+section#filtersSection {
+  grid-area: filters; }
+
+.carsLayout {
+  display: grid;
+  grid-template-areas: "search search" "filters cars";
+  grid-template-rows: 2fr auto;
+  grid-template-columns: 3fr 9fr; }
 
 /* ---------------- `lg` Tablets ----------------*/
 @media (max-width: 991.98px) {

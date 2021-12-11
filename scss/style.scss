@@ -165,13 +165,13 @@ a {
   }
 
   &__button {
-    button {
+    a {
       min-width: 30%;
       border-radius: 2rem;
     }
 
     &--fontSizeLarge {
-      button {
+      a {
         @extend .fontSizeLarge;
       }
     }
@@ -544,7 +544,7 @@ a {
 @media (max-width: 767.98px) {
   .searchBox {
     &__button {
-      button {
+      a {
         justify-self: center;
         min-width: 70%;
       }
@@ -576,6 +576,29 @@ a {
       }
     }
   }
+}
+
+section#searchSection {
+  grid-area: search;
+}
+
+section#carsSection {
+  grid-area: cars;
+}
+
+section#filtersSection {
+  grid-area: filters;
+}
+
+.carsLayout {
+  display: grid;
+  grid-template-areas: 
+  "search search"
+  "filters cars";
+
+  grid-template-rows: 2fr auto;
+  grid-template-columns: 3fr 9fr;
+
 }
 
 /* ---------------- `lg` Tablets ----------------*/
