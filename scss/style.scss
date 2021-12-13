@@ -540,6 +540,47 @@ a {
   }
 }
 
+.cars {
+
+  &__search {
+    background-color:#f2f2f2;
+    max-width: 68rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  &__item {
+    max-width: 20rem;
+    margin: 1rem;
+    background-color: #FFFFFF;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.08);
+    &__img {
+      
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding: 1rem;
+      h2 {
+        margin-bottom: 0rem;
+      }
+      h3 {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+}
+
 /* ---------------- `md` Mobile ----------------*/
 @media (max-width: 767.98px) {
   .searchBox {
