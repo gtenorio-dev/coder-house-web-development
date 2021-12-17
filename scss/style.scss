@@ -633,56 +633,6 @@ a {
 
 }
 
-/* ---------------- `md` Mobile ----------------*/
-@media (max-width: 767.98px) {
-  .searchBox {
-    &__button {
-      a {
-        justify-self: center;
-        min-width: 70%;
-      }
-    }
-
-    &__container {
-      position: relative;
-      @include floatComponent(0, 0, none);
-      border-radius: 0.5rem;
-      width: 80%;
-    }
-  }
-
-  .signUp {
-    &__img {
-      width: 100%;
-    }
-
-    &__form {
-      width: 100%;
-
-      & form {
-        flex-direction: column;
-        margin: 3rem 1rem;
-      }
-
-      &__input {
-        width: 90%;
-      }
-    }
-  }
-}
-
-section#searchSection {
-  grid-area: search;
-}
-
-section#carsSection {
-  grid-area: cars;
-}
-
-section#filtersSection {
-  grid-area: filters;
-}
-
 /* ---------------- `lg` Tablets ----------------*/
 @media (max-width: 991.98px) {
   header {
@@ -810,4 +760,54 @@ section#filtersSection {
     }
   }
 
+}
+
+/* ---------------- `md` Mobile ----------------*/
+@media (max-width: 767.98px) {
+  .searchBox {
+    &__button {
+      a {
+        justify-self: center;
+        min-width: 70%;
+      }
+    }
+
+    &__container {
+      position: relative;
+      @include floatComponent(0, 0, none);
+      border-radius: 0.5rem;
+      width: 80%;
+    }
+  }
+
+  .signUp {
+    &__img {
+      width: 100%;
+    }
+
+    &__form {
+      width: 100%;
+
+      & form {
+        flex-direction: column;
+        margin: 3rem 1rem;
+      }
+
+      &__input {
+        width: 90%;
+      }
+    }
+  }
+}
+
+section#searchSection {
+  grid-area: search;
+}
+
+section#carsSection {
+  grid-area: cars;
+}
+
+section#filtersSection {
+  grid-area: filters;
 }
