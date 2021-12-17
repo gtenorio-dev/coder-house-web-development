@@ -633,6 +633,19 @@ a {
 
 }
 
+
+.filters {
+
+  &__mobile {
+    display: none;
+  }
+
+  &__container {
+    display: block;
+  }
+}
+
+
 /* ---------------- `lg` Tablets ----------------*/
 @media (max-width: 991.98px) {
   header {
@@ -725,6 +738,19 @@ a {
     }
   }
 
+  .carsLayout {
+    display: grid;
+    grid-template-areas: 
+    "search"
+    "filters"
+    "cars";
+
+    grid-template-rows: 1fr ;
+    grid-template-columns: 1fr;
+  
+    background-color: $backgroundSecondary;
+  }
+
   .carSerach {
     max-width: 50rem;
     &__inputs {
@@ -760,6 +786,14 @@ a {
     }
   }
 
+  .filters {
+    &__mobile {
+      display: block;
+    }
+    &__container {
+      display: none;
+    }
+  }
 }
 
 /* ---------------- `md` Mobile ----------------*/
@@ -796,6 +830,13 @@ a {
       &__input {
         width: 90%;
       }
+    }
+  }
+
+  .carSerach {
+    max-width: 20rem;  
+    &__button {
+      width: 12rem;
     }
   }
 }

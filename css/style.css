@@ -470,36 +470,11 @@ a {
     .cars__item__info h3 {
       margin-bottom: 1rem; }
 
-/* ---------------- `md` Mobile ----------------*/
-@media (max-width: 767.98px) {
-  .searchBox__button a {
-    justify-self: center;
-    min-width: 70%; }
-  .searchBox__container {
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: none;
-    border-radius: 0.5rem;
-    width: 80%; }
-  .signUp__img {
-    width: 100%; }
-  .signUp__form {
-    width: 100%; }
-    .signUp__form form {
-      flex-direction: column;
-      margin: 3rem 1rem; }
-    .signUp__form__input {
-      width: 90%; } }
+.filters__mobile {
+  display: none; }
 
-section#searchSection {
-  grid-area: search; }
-
-section#carsSection {
-  grid-area: cars; }
-
-section#filtersSection {
-  grid-area: filters; }
+.filters__container {
+  display: block; }
 
 /* ---------------- `lg` Tablets ----------------*/
 @media (max-width: 991.98px) {
@@ -550,6 +525,12 @@ section#filtersSection {
       width: 100%;
       padding-left: 4rem;
       padding-right: 4rem; }
+  .carsLayout {
+    display: grid;
+    grid-template-areas: "search" "filters" "cars";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    background-color: #f2f2f2; }
   .carSerach {
     max-width: 50rem; }
     .carSerach__inputs__city {
@@ -573,4 +554,43 @@ section#filtersSection {
       padding-right: 1rem;
       padding-left: 1rem; }
       .carSerach__button a {
-        width: 100%; } }
+        width: 100%; }
+  .filters__mobile {
+    display: block; }
+  .filters__container {
+    display: none; } }
+
+/* ---------------- `md` Mobile ----------------*/
+@media (max-width: 767.98px) {
+  .searchBox__button a {
+    justify-self: center;
+    min-width: 70%; }
+  .searchBox__container {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    border-radius: 0.5rem;
+    width: 80%; }
+  .signUp__img {
+    width: 100%; }
+  .signUp__form {
+    width: 100%; }
+    .signUp__form form {
+      flex-direction: column;
+      margin: 3rem 1rem; }
+    .signUp__form__input {
+      width: 90%; }
+  .carSerach {
+    max-width: 20rem; }
+    .carSerach__button {
+      width: 12rem; } }
+
+section#searchSection {
+  grid-area: search; }
+
+section#carsSection {
+  grid-area: cars; }
+
+section#filtersSection {
+  grid-area: filters; }
