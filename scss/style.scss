@@ -540,10 +540,60 @@ a {
   }
 }
 
+.carsLayout {
+  display: grid;
+  grid-template-areas: 
+  "search search"
+  "filters cars";
+
+  grid-template-rows: 2fr auto;
+  grid-template-columns: 3fr 9fr;
+
+  background-color: $backgroundSecondary;
+}
+
+.carSerach {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  padding: 1rem 0rem 1rem 0rem;
+  max-width: 70rem;
+  &__inputs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &__city {
+      width: 50%;
+      padding: 0.5rem;
+      input {
+        width: 100%;
+      }
+    }
+    &__date {
+      width: 25%;
+      padding: 0.5rem;
+      input {
+        width: 100%;
+      }
+    }
+  }
+
+  &__button {
+    align-self: end;
+    padding: 0.5rem 0.5rem 0.3rem 0.5rem;
+    a {
+      padding-right: 2rem;
+      padding-left: 2rem;
+    }
+  }
+}
+
 .cars {
 
   &__search {
-    background-color:#f2f2f2;
     max-width: 68rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -561,8 +611,10 @@ a {
     margin: 1rem;
     background-color: #FFFFFF;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.08);
-    &__img {
-      
+    border-radius: 0.7rem;
+
+    img {
+      border-radius: 0.7rem 0.7rem 0rem 0rem;
     }
 
     &__info {
@@ -629,17 +681,6 @@ section#carsSection {
 
 section#filtersSection {
   grid-area: filters;
-}
-
-.carsLayout {
-  display: grid;
-  grid-template-areas: 
-  "search search"
-  "filters cars";
-
-  grid-template-rows: 2fr auto;
-  grid-template-columns: 3fr 9fr;
-
 }
 
 /* ---------------- `lg` Tablets ----------------*/
@@ -733,4 +774,40 @@ section#filtersSection {
       padding-right: 4rem;
     }
   }
+
+  .carSerach {
+    max-width: 50rem;
+    &__inputs {
+      &__city {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+        padding: 0.5rem;
+        label {
+          padding-right: 0.5rem;
+        }
+      }
+      &__date {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 50%;
+        padding: 0.5rem;
+        label {
+          padding-right: 0.5rem;
+        }
+      }
+    }
+  
+    &__button {
+      width: 30rem;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      a {
+        width: 100%;
+      }
+    }
+  }
+
 }

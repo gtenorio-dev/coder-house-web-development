@@ -405,8 +405,43 @@ a {
     .contact__container__item--textCenter {
       text-align: center; }
 
+.carsLayout {
+  display: grid;
+  grid-template-areas: "search search" "filters cars";
+  grid-template-rows: 2fr auto;
+  grid-template-columns: 3fr 9fr;
+  background-color: #f2f2f2; }
+
+.carSerach {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  padding: 1rem 0rem 1rem 0rem;
+  max-width: 70rem; }
+  .carSerach__inputs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .carSerach__inputs__city {
+      width: 50%;
+      padding: 0.5rem; }
+      .carSerach__inputs__city input {
+        width: 100%; }
+    .carSerach__inputs__date {
+      width: 25%;
+      padding: 0.5rem; }
+      .carSerach__inputs__date input {
+        width: 100%; }
+  .carSerach__button {
+    align-self: end;
+    padding: 0.5rem 0.5rem 0.3rem 0.5rem; }
+    .carSerach__button a {
+      padding-right: 2rem;
+      padding-left: 2rem; }
+
 .cars__search {
-  background-color: #f2f2f2;
   max-width: 68rem;
   padding-top: 3rem;
   padding-bottom: 3rem; }
@@ -421,7 +456,10 @@ a {
   max-width: 20rem;
   margin: 1rem;
   background-color: #FFFFFF;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.08); }
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 0.7rem; }
+  .cars__item img {
+    border-radius: 0.7rem 0.7rem 0rem 0rem; }
   .cars__item__info {
     display: flex;
     flex-direction: column;
@@ -462,12 +500,6 @@ section#carsSection {
 
 section#filtersSection {
   grid-area: filters; }
-
-.carsLayout {
-  display: grid;
-  grid-template-areas: "search search" "filters cars";
-  grid-template-rows: 2fr auto;
-  grid-template-columns: 3fr 9fr; }
 
 /* ---------------- `lg` Tablets ----------------*/
 @media (max-width: 991.98px) {
@@ -517,4 +549,28 @@ section#filtersSection {
     .brands__container {
       width: 100%;
       padding-left: 4rem;
-      padding-right: 4rem; } }
+      padding-right: 4rem; }
+  .carSerach {
+    max-width: 50rem; }
+    .carSerach__inputs__city {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      width: 100%;
+      padding: 0.5rem; }
+      .carSerach__inputs__city label {
+        padding-right: 0.5rem; }
+    .carSerach__inputs__date {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      width: 50%;
+      padding: 0.5rem; }
+      .carSerach__inputs__date label {
+        padding-right: 0.5rem; }
+    .carSerach__button {
+      width: 30rem;
+      padding-right: 1rem;
+      padding-left: 1rem; }
+      .carSerach__button a {
+        width: 100%; } }

@@ -66,12 +66,33 @@
     
     
     <main class="carsLayout">
-        <section id="searchSection" style="background-color: cornflowerblue;">
-            <p>search</p>
-            <p>search</p>
-            <p>search</p>
-        </section>
-        <section id="carsSection" style="background-color: blue;">
+        <section id="searchSection" style="background-color: #00C6DD;">
+          
+          <div class="carSerach">
+
+            <div class="carSerach__inputs">
+              <div class="carSerach__inputs__city">
+                <label>City</label>
+                <input type="text" value="San Carlos de Bariloche, Rio Negro, Argentina">
+              </div>
+              <div class="carSerach__inputs__date">
+                <label for="inputEmail4">Since</label>
+                <input type="date">
+              </div>
+              <div class="carSerach__inputs__date">
+                <label for="inputEmail4">To</label>
+                <input type="date">
+              </div>
+            </div>
+
+            <div class="carSerach__button searchBox__button searchBox__button--fontSizeLarge">
+              <a href="#" class="btn searchBox__button--SecondaryColor">Search</a>
+            </div>
+
+          </div>
+            
+          </section>
+        <section id="carsSection">
             
           <div class="cars">
 
@@ -79,7 +100,7 @@
             
               <div class="cars__container">
                 <div class="cars__item">
-                  <img src="../assets/img/cars/car_001.jpg" alt="" class="img-fluid">
+                  <img src="../assets/img/cars/car_002.jpg" alt="" class="img-fluid">
                   <div class="cars__item__info">
                     <h2>$500</h2>
                     <h3>2019</h3>
@@ -87,7 +108,7 @@
                   </div>
                 </div>
                 <div class="cars__item">
-                  <img src="../assets/img/cars/car_001.jpg" alt="" class="img-fluid">
+                  <img src="../assets/img/cars/car_002.jpg" alt="" class="img-fluid">
                   <div class="cars__item__info">
                     <h2>$500</h2>
                     <h3>2019</h3>
@@ -95,7 +116,7 @@
                   </div>
                 </div>
                 <div class="cars__item">
-                  <img src="../assets/img/cars/car_001.jpg" alt="" class="img-fluid">
+                  <img src="../assets/img/cars/car_002.jpg" alt="" class="img-fluid">
                   <div class="cars__item__info">
                     <h2>$500</h2>
                     <h3>2019</h3>
@@ -103,7 +124,7 @@
                   </div>
                 </div>
                 <div class="cars__item">
-                  <img src="../assets/img/cars/car_001.jpg" alt="" class="img-fluid">
+                  <img src="../assets/img/cars/car_002.jpg" alt="" class="img-fluid">
                   <div class="cars__item__info">
                     <h2>$500</h2>
                     <h3>2019</h3>
@@ -111,7 +132,7 @@
                   </div>
                 </div>
                 <div class="cars__item">
-                  <img src="../assets/img/cars/car_001.jpg" alt="" class="img-fluid">
+                  <img src="../assets/img/cars/car_002.jpg" alt="" class="img-fluid">
                   <div class="cars__item__info">
                     <h2>$500</h2>
                     <h3>2019</h3>
@@ -119,7 +140,7 @@
                   </div>
                 </div>
                 <div class="cars__item">
-                  <img src="../assets/img/cars/car_001.jpg" alt="" class="img-fluid">
+                  <img src="../assets/img/cars/car_002.jpg" alt="" class="img-fluid">
                   <div class="cars__item__info">
                     <h2>$500</h2>
                     <h3>2019</h3>
@@ -127,7 +148,7 @@
                   </div>
                 </div>
                 <div class="cars__item">
-                  <img src="../assets/img/cars/car_001.jpg" alt="" class="img-fluid">
+                  <img src="../assets/img/cars/car_002.jpg" alt="" class="img-fluid">
                   <div class="cars__item__info">
                     <h2>$500</h2>
                     <h3>2019</h3>
@@ -135,7 +156,7 @@
                   </div>
                 </div>
                 <div class="cars__item">
-                  <img src="../assets/img/cars/car_001.jpg" alt="" class="img-fluid">
+                  <img src="../assets/img/cars/car_002.jpg" alt="" class="img-fluid">
                   <div class="cars__item__info">
                     <h2>$500</h2>
                     <h3>2019</h3>
@@ -143,7 +164,7 @@
                   </div>
                 </div>
                 <div class="cars__item">
-                  <img src="../assets/img/cars/car_001.jpg" alt="" class="img-fluid">
+                  <img src="../assets/img/cars/car_002.jpg" alt="" class="img-fluid">
                   <div class="cars__item__info">
                     <h2>$500</h2>
                     <h3>2019</h3>
@@ -156,11 +177,64 @@
 
         </section>
         <section id="filtersSection" style="background-color: chartreuse;">
-            <p>filters</p>
-            <p>filters</p>
-            <p>filters</p>
-            <p>filters</p>
-            <p>filters</p>
+          <div>
+            
+            <!-- Brand Filter -->
+            <div>
+              <h2>Brand</h2>
+            </div>
+            <div>
+              <input type="checkbox" name="brand" id="" />
+              <label for="">Chevrolet</label>
+            </div>
+            <div>
+              <input type="checkbox" name="brand" id="" />
+              <label for="">Chevrolet</label>
+            </div>
+            <div>
+              <input type="checkbox" name="brand" id="" />
+              <label for="">Chevrolet</label>
+            </div>
+            <div>
+              <input type="checkbox" name="brand" id="" />
+              <label for="">Chevrolet</label>
+            </div>
+          </div>
+
+          <!-- Year Filter -->
+          <div>
+            <div>
+              <h2>Year</h2>
+            </div>
+            <div>
+              <input type="checkbox" name="year" id="" />
+              <label for="">2021</label>
+            </div>
+            <div>
+              <input type="checkbox" name="year" id="" />
+              <label for="">2021</label>
+            </div>
+            <div>
+              <input type="checkbox" name="year" id="" />
+              <label for="">2021</label>
+            </div>
+            <div>
+              <input type="checkbox" name="year" id="" />
+              <label for="">2021</label>
+            </div>
+          </div>
+
+          <!-- Price Filter -->
+          <div>
+            <div>
+              <h2>Price</h2>
+            </div>
+            <div>
+              <input type="text" placeholder="Min">
+              <input type="text" placeholder="Max">
+            </div>
+          </div>
+
         </section>
     </main>
 
