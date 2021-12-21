@@ -56,24 +56,31 @@ a {
   transform: $transform;
 }
 
+.inputStyle {
+  height: 3em;
+  padding: 0.375rem 0.75rem;
+  margin-top: 0.5rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ccc;
+  border-radius: 0.5em;
+}
+
 .formInput {
   display: flex;
   flex-direction: column;
   margin: 0.7rem 1rem;
   & label {
-    font-size: me;
+    font-size: medium;
   }
 
   & input {
-    height: 3em;
-    padding: 0.375rem 0.75rem;
-    margin-top: 0.5rem;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #ccc;
-    border-radius: 0.5em;
+    @extend .inputStyle;
   }
 }
+
+
+
 
 .titleSection {
   background-color: $auxiliaryColor;
@@ -558,7 +565,7 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   margin: auto;
-  padding: 1rem 0rem 1rem 0rem;
+  padding: 2rem 0rem 2rem 0rem;
   max-width: 70rem;
   &__inputs {
     display: flex;
@@ -568,22 +575,30 @@ a {
     &__city {
       width: 50%;
       padding: 0.5rem;
+      label {
+        padding-left: 0.5rem;
+      }
       input {
         width: 100%;
+        @extend .inputStyle;
       }
     }
     &__date {
       width: 25%;
       padding: 0.5rem;
+      label {
+        padding-left: 0.5rem;
+      }
       input {
         width: 100%;
+        @extend .inputStyle;
       }
     }
   }
 
   &__button {
     align-self: end;
-    padding: 0.5rem 0.5rem 0.3rem 0.5rem;
+    padding: 1rem;
     a {
       padding-right: 2rem;
       padding-left: 2rem;
@@ -596,7 +611,7 @@ a {
   &__search {
     max-width: 68rem;
     padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-bottom: 7rem;
   }
 
   &__container {
@@ -623,10 +638,15 @@ a {
       justify-content: space-evenly;
       padding: 1rem;
       h2 {
+        font-size: x-large;
         margin-bottom: 0rem;
       }
       h3 {
+        font-size: medium;
         margin-bottom: 1rem;
+      }
+      h5 {
+        font-size: large;
       }
     }
   }
@@ -637,7 +657,9 @@ a {
 .filters {
 
   &__mobile {
-    display: none;
+    &__label {
+      display: none;
+    }
   }
 
   &__container {
@@ -645,6 +667,23 @@ a {
   }
 }
 
+.filters {
+  &__mobile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    &__label {
+      padding: 1rem;
+      a {
+        color: white;
+      }
+      i {
+        color: white;
+      }
+    }
+  }
+}
 
 /* ---------------- `lg` Tablets ----------------*/
 @media (max-width: 991.98px) {
@@ -758,6 +797,7 @@ a {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
+        align-items: center;
         width: 100%;
         padding: 0.5rem;
         label {
@@ -768,6 +808,7 @@ a {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
+        align-items: center;
         width: 50%;
         padding: 0.5rem;
         label {
@@ -788,12 +829,15 @@ a {
 
   .filters {
     &__mobile {
-      display: block;
+      &__label {
+        display: block;
+      }
     }
     &__container {
       display: none;
     }
   }
+
 }
 
 /* ---------------- `md` Mobile ----------------*/
@@ -834,8 +878,27 @@ a {
   }
 
   .carSerach {
-    max-width: 20rem;  
+    // max-width: 20rem;  
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    &__inputs {
+      padding: 0rem;
+
+      &__city {
+        padding: 0.3rem;
+        label {
+          padding-left: 0rem;
+        }
+      }
+      &__date {
+        padding: 0.3rem;
+        label {
+          padding-left: 0rem;
+        }
+      }
+    }
     &__button {
+      padding-top: 2.5rem;
       width: 12rem;
     }
   }
@@ -843,6 +906,8 @@ a {
 
 section#searchSection {
   grid-area: search;
+  // background-color: $primaryColor;
+  background-image: linear-gradient($primaryColor, $primaryColorBis);
 }
 
 section#carsSection {
@@ -851,4 +916,5 @@ section#carsSection {
 
 section#filtersSection {
   grid-area: filters;
+  background-color: $primaryColorBis;
 }

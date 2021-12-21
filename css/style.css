@@ -75,20 +75,21 @@ a {
   border: none;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); }
 
+.inputStyle, .formInput input, .signIn__form__input input, .signUp__form__input input, .carSerach__inputs__city input, .carSerach__inputs__date input {
+  height: 3em;
+  padding: 0.375rem 0.75rem;
+  margin-top: 0.5rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ccc;
+  border-radius: 0.5em; }
+
 .formInput, .signIn__form__input, .signUp__form__input {
   display: flex;
   flex-direction: column;
   margin: 0.7rem 1rem; }
   .formInput label, .signIn__form__input label, .signUp__form__input label {
-    font-size: me; }
-  .formInput input, .signIn__form__input input, .signUp__form__input input {
-    height: 3em;
-    padding: 0.375rem 0.75rem;
-    margin-top: 0.5rem;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #ccc;
-    border-radius: 0.5em; }
+    font-size: medium; }
 
 .titleSection, .requirements__title, .paymentTypes__title, .brands__title, .contact__title {
   background-color: #f0f0f0;
@@ -98,7 +99,7 @@ a {
   padding-left: 4rem;
   text-align: center;
   text-transform: uppercase;
-  color: #00c6dd;
+  color: #58eeff;
   letter-spacing: 5px; }
 
 .fontSizeLarge, .footer__menu--fontSizeLarge, .searchBox__button--fontSizeLarge a, .rentCarBox__button--fontSizeLarge {
@@ -418,7 +419,7 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   margin: auto;
-  padding: 1rem 0rem 1rem 0rem;
+  padding: 2rem 0rem 2rem 0rem;
   max-width: 70rem; }
   .carSerach__inputs {
     display: flex;
@@ -427,16 +428,20 @@ a {
     .carSerach__inputs__city {
       width: 50%;
       padding: 0.5rem; }
+      .carSerach__inputs__city label {
+        padding-left: 0.5rem; }
       .carSerach__inputs__city input {
         width: 100%; }
     .carSerach__inputs__date {
       width: 25%;
       padding: 0.5rem; }
+      .carSerach__inputs__date label {
+        padding-left: 0.5rem; }
       .carSerach__inputs__date input {
         width: 100%; }
   .carSerach__button {
     align-self: end;
-    padding: 0.5rem 0.5rem 0.3rem 0.5rem; }
+    padding: 1rem; }
     .carSerach__button a {
       padding-right: 2rem;
       padding-left: 2rem; }
@@ -444,7 +449,7 @@ a {
 .cars__search {
   max-width: 68rem;
   padding-top: 3rem;
-  padding-bottom: 3rem; }
+  padding-bottom: 7rem; }
 
 .cars__container {
   display: flex;
@@ -466,15 +471,31 @@ a {
     justify-content: space-evenly;
     padding: 1rem; }
     .cars__item__info h2 {
+      font-size: x-large;
       margin-bottom: 0rem; }
     .cars__item__info h3 {
+      font-size: medium;
       margin-bottom: 1rem; }
+    .cars__item__info h5 {
+      font-size: large; }
 
-.filters__mobile {
+.filters__mobile__label {
   display: none; }
 
 .filters__container {
   display: block; }
+
+.filters__mobile {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center; }
+  .filters__mobile__label {
+    padding: 1rem; }
+    .filters__mobile__label a {
+      color: white; }
+    .filters__mobile__label i {
+      color: white; }
 
 /* ---------------- `lg` Tablets ----------------*/
 @media (max-width: 991.98px) {
@@ -537,6 +558,7 @@ a {
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
+      align-items: center;
       width: 100%;
       padding: 0.5rem; }
       .carSerach__inputs__city label {
@@ -545,6 +567,7 @@ a {
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
+      align-items: center;
       width: 50%;
       padding: 0.5rem; }
       .carSerach__inputs__date label {
@@ -555,7 +578,7 @@ a {
       padding-left: 1rem; }
       .carSerach__button a {
         width: 100%; }
-  .filters__mobile {
+  .filters__mobile__label {
     display: block; }
   .filters__container {
     display: none; } }
@@ -582,15 +605,29 @@ a {
     .signUp__form__input {
       width: 90%; }
   .carSerach {
-    max-width: 20rem; }
+    padding-left: 0.2rem;
+    padding-right: 0.2rem; }
+    .carSerach__inputs {
+      padding: 0rem; }
+      .carSerach__inputs__city {
+        padding: 0.3rem; }
+        .carSerach__inputs__city label {
+          padding-left: 0rem; }
+      .carSerach__inputs__date {
+        padding: 0.3rem; }
+        .carSerach__inputs__date label {
+          padding-left: 0rem; }
     .carSerach__button {
+      padding-top: 2.5rem;
       width: 12rem; } }
 
 section#searchSection {
-  grid-area: search; }
+  grid-area: search;
+  background-image: linear-gradient(#58eeff, #00c6dd); }
 
 section#carsSection {
   grid-area: cars; }
 
 section#filtersSection {
-  grid-area: filters; }
+  grid-area: filters;
+  background-color: #00c6dd; }
