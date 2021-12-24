@@ -75,7 +75,7 @@ a {
   border: none;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); }
 
-.inputStyle, .formInput input, .signIn__form__input input, .signUp__form__input input, .carSerach__inputs__city input, .carSerach__inputs__date input {
+.inputStyle, .formInput input, .signIn__form__input input, .signUp__form__input input, .carSerach__inputs__city input, .carSerach__inputs__date input, .filters__container__price__item input {
   height: 3em;
   padding: 0.375rem 0.75rem;
   margin-top: 0.5rem;
@@ -119,7 +119,7 @@ a {
   margin-left: 2rem; }
 
 .footer {
-  background-image: linear-gradient(#6c757d 40%, #555b61 90%, #555b61 100%);
+  background-image: linear-gradient(#126E82 40%, #132C33 90%, #132C33 100%);
   color: #ffffff;
   position: relative;
   padding-top: 3rem;
@@ -197,14 +197,14 @@ a {
     text-align: center; }
     .benefits__container__item h3 {
       padding-bottom: 2rem;
-      color: #555b61; }
+      color: #132C33; }
     .benefits__container__item p {
       font-size: medium; }
 
 .requirements {
   margin-bottom: 7rem; }
   .requirements__subTitle {
-    color: #555b61;
+    color: #132C33;
     max-width: 40rem;
     margin: auto;
     text-align: left;
@@ -364,7 +364,7 @@ a {
       margin: 2rem; }
       .paymentTypes__container__item p {
         display: inline-block;
-        background-color: #6c757d;
+        background-color: #126E82;
         color: white;
         width: 17rem;
         text-align: center;
@@ -411,7 +411,7 @@ a {
   grid-template-areas: "search search" "filters cars";
   grid-template-rows: 2fr auto;
   grid-template-columns: 3fr 9fr;
-  background-color: #f2f2f2; }
+  background-color: #D8E3E7; }
 
 .carSerach {
   display: flex;
@@ -460,7 +460,7 @@ a {
 .cars__item {
   max-width: 20rem;
   margin: 1rem;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.08);
   border-radius: 0.7rem; }
   .cars__item img {
@@ -485,17 +485,53 @@ a {
 .filters__container {
   display: block; }
 
-.filters__mobile {
+.filters {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center; }
-  .filters__mobile__label {
-    padding: 1rem; }
-    .filters__mobile__label a {
-      color: white; }
-    .filters__mobile__label i {
-      color: white; }
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: end; }
+  .filters__mobile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-self: center;
+    justify-content: center; }
+    .filters__mobile__label {
+      padding: 1rem; }
+      .filters__mobile__label a {
+        color: white; }
+      .filters__mobile__label i {
+        color: white; }
+  .filters__container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    width: 70%;
+    padding-right: 3rem; }
+    .filters__container__brands {
+      padding-top: 1rem;
+      padding-bottom: 1rem; }
+      .filters__container__brands__title h2 {
+        font-size: x-large; }
+      .filters__container__brands__item {
+        padding: 0.7rem 0rem 0rem 1rem; }
+    .filters__container__year {
+      padding-top: 1rem;
+      padding-bottom: 1rem; }
+      .filters__container__year__title h2 {
+        font-size: x-large; }
+      .filters__container__year__item {
+        padding: 0.7rem 0rem 0rem 1rem; }
+    .filters__container__price {
+      padding-top: 1rem;
+      padding-bottom: 1rem; }
+      .filters__container__price__title h2 {
+        font-size: x-large; }
+      .filters__container__price__item {
+        padding: 0.7rem 0rem 0rem 1rem; }
 
 /* ---------------- `lg` Tablets ----------------*/
 @media (max-width: 991.98px) {
@@ -551,7 +587,7 @@ a {
     grid-template-areas: "search" "filters" "cars";
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
-    background-color: #f2f2f2; }
+    background-color: #D8E3E7; }
   .carSerach {
     max-width: 50rem; }
     .carSerach__inputs__city {
@@ -623,11 +659,11 @@ a {
 
 section#searchSection {
   grid-area: search;
-  background-image: linear-gradient(#58eeff, #00c6dd); }
+  background-image: linear-gradient(#58eeff, #51C4D3); }
 
 section#carsSection {
   grid-area: cars; }
 
 section#filtersSection {
   grid-area: filters;
-  background-color: #00c6dd; }
+  background-color: #51C4D3; }
