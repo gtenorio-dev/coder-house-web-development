@@ -59,6 +59,14 @@ a {
   background-color: #dd4a4a;
   color: #ffffff; }
 
+.filters__container__button--SecondaryColor {
+  background-color: #ff4d4d;
+  color: #ffffff; }
+
+.filters__container__button--SecondaryColor:hover {
+  background-color: #dd4a4a;
+  color: #ffffff; }
+
 .searchBox__button--SecondaryColor {
   border: none;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); }
@@ -72,6 +80,10 @@ a {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); }
 
 .signUp__form__button--SecondaryColor {
+  border: none;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); }
+
+.filters__container__button--SecondaryColor {
   border: none;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); }
 
@@ -102,7 +114,7 @@ a {
   color: #58eeff;
   letter-spacing: 5px; }
 
-.fontSizeLarge, .footer__menu--fontSizeLarge, .searchBox__button--fontSizeLarge a, .rentCarBox__button--fontSizeLarge {
+.fontSizeLarge, .footer__menu--fontSizeLarge, .searchBox__button--fontSizeLarge a, .rentCarBox__button--fontSizeLarge, .filters__container__button--fontSizeLarge a {
   font-size: large; }
 
 #registerOwner {
@@ -551,7 +563,14 @@ a {
         .filters__container__price__item input {
           width: 100%; }
     .filters__container__button {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
       margin: 2rem; }
+      .filters__container__button a {
+        min-width: 30%;
+        border-radius: 2rem; }
 
 /* ---------------- `lg` Tablets ----------------*/
 @media (max-width: 991.98px) {
