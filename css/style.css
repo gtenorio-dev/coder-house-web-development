@@ -490,7 +490,7 @@ a {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: end; }
+  align-items: center; }
   .filters__mobile {
     display: flex;
     flex-direction: row;
@@ -508,30 +508,50 @@ a {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: start;
-    width: 70%;
-    padding-right: 3rem; }
+    align-items: center; }
     .filters__container__brands {
       padding-top: 1rem;
-      padding-bottom: 1rem; }
+      padding-bottom: 1rem;
+      background-color: rgba(255, 255, 255, 0.5);
+      margin: 1rem;
+      padding: 2rem 4rem 2rem 3rem;
+      border-radius: 1rem;
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.08);
+      width: 15rem; }
       .filters__container__brands__title h2 {
         font-size: x-large; }
       .filters__container__brands__item {
         padding: 0.7rem 0rem 0rem 1rem; }
     .filters__container__year {
       padding-top: 1rem;
-      padding-bottom: 1rem; }
+      padding-bottom: 1rem;
+      background-color: rgba(255, 255, 255, 0.5);
+      margin: 1rem;
+      padding: 2rem 4rem 2rem 3rem;
+      border-radius: 1rem;
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.08);
+      width: 15rem; }
       .filters__container__year__title h2 {
         font-size: x-large; }
       .filters__container__year__item {
         padding: 0.7rem 0rem 0rem 1rem; }
     .filters__container__price {
       padding-top: 1rem;
-      padding-bottom: 1rem; }
+      padding-bottom: 1rem;
+      background-color: rgba(255, 255, 255, 0.5);
+      margin: 1rem;
+      padding: 2rem 4rem 2rem 3rem;
+      border-radius: 1rem;
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.08);
+      width: 15rem; }
       .filters__container__price__title h2 {
         font-size: x-large; }
       .filters__container__price__item {
         padding: 0.7rem 0rem 0rem 1rem; }
+        .filters__container__price__item input {
+          width: 100%; }
+    .filters__container__button {
+      margin: 2rem; }
 
 /* ---------------- `lg` Tablets ----------------*/
 @media (max-width: 991.98px) {

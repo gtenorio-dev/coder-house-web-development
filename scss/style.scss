@@ -665,7 +665,7 @@ a {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: end;
+  align-items: center;
 
   &__mobile {
     display: flex;
@@ -689,14 +689,20 @@ a {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: start;
+    align-items: center;
 
-    width: 70%;
-    padding-right: 3rem;
+    //width: 25rem;
+    //padding-right: 3rem;
 
     &__brands {
       padding-top: 1rem;
       padding-bottom: 1rem;
+      background-color: $transparentSecondary;
+      margin: 1rem;
+      padding: 2rem 4rem 2rem 3rem;
+      border-radius: 1rem;
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.08);
+      width: 15rem;
       &__title {
         h2 {
           font-size: x-large;
@@ -709,6 +715,12 @@ a {
     &__year {
       padding-top: 1rem;
       padding-bottom: 1rem;
+      background-color: $transparentSecondary;
+      margin: 1rem;
+      padding: 2rem 4rem 2rem 3rem;
+      border-radius: 1rem;
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.08);
+      width: 15rem;
       &__title {
         h2 {
           font-size: x-large;
@@ -721,6 +733,12 @@ a {
     &__price {
       padding-top: 1rem;
       padding-bottom: 1rem;
+      background-color: $transparentSecondary;
+      margin: 1rem;
+      padding: 2rem 4rem 2rem 3rem;
+      border-radius: 1rem;
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.08);
+      width: 15rem;
       &__title {
         h2 {
           font-size: x-large;
@@ -729,11 +747,13 @@ a {
       &__item {
         padding: 0.7rem 0rem 0rem 1rem;
         input {
-
-          @extend .inputStyle
-          
+          width: 100%;
+          @extend .inputStyle;
         }
       }
+    }
+    &__button {
+      margin: 2rem;
     }
   }
 }
