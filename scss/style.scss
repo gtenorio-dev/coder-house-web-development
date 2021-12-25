@@ -690,10 +690,6 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
-    //width: 25rem;
-    //padding-right: 3rem;
-
     &__brands {
       padding-top: 1rem;
       padding-bottom: 1rem;
@@ -964,7 +960,6 @@ a {
   }
 
   .carSerach {
-    // max-width: 20rem;
     padding-left: 0.2rem;
     padding-right: 0.2rem;
     &__inputs {
@@ -992,7 +987,6 @@ a {
 
 section#searchSection {
   grid-area: search;
-  // background-color: $primaryColor;
   background-image: linear-gradient($primaryColor, $primaryColorBis);
 }
 
